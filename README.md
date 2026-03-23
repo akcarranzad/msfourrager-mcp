@@ -43,7 +43,7 @@ Rag_fourrage/
 
 ## How to Create a New MCP Server
 
-### Step 1 — Duplicate the template
+### Step 1: Duplicate the template
 
 1. Open n8n → **Rag_fourrage / Tool**
 2. Find **"MCP Server - [TEMPLATE]"**
@@ -51,7 +51,7 @@ Rag_fourrage/
 4. Rename it: `MCP Server - [Your Name]`
 5. Move it to the correct folder
 
-### Step 2 — Configure the MCP Server Trigger
+### Step 2: Configure the MCP Server Trigger
 
 1. Open the duplicated workflow
 2. Click the **"MCP Server Trigger"** node
@@ -67,7 +67,7 @@ Rag_fourrage/
 > Your MCP URL will be:
 > `https://msfourrager.app.n8n.cloud/mcp/[your-path]`
 
-### Step 3 — Configure the data source workflow
+### Step 3: Configure the data source workflow
 
 1. Create or identify the sub-workflow that fetches your data
 2. Open that sub-workflow → find the trigger node
@@ -83,7 +83,7 @@ Rag_fourrage/
 
 5. Save the sub-workflow
 
-### Step 4 — Configure the tool node
+### Step 4: Configure the tool node
 
 1. Click the **"get_[tool_name]"** node
 2. Fill in:
@@ -97,17 +97,17 @@ Rag_fourrage/
 3. Rename the node to match your tool name
 4. Right-click → **"Rename"** → `get_[your_action]`
 
-### Step 5 — Add more tools (if needed)
+### Step 5: Add more tools (if needed)
 
 For each specialized tool:
 1. Click **"+"** on the Tools connection of the MCP Server Trigger
 2. Search **"Call n8n Workflow Tool"**
 3. Repeat Step 4 for each tool
 
-> 💡 Best practice: Create one tool per type of question.
+> Best practice: Create one tool per question type.
 > Avoid creating one tool that does everything.
 
-### Step 6 — Test the MCP Server
+### Step 6: Test the MCP Server
 
 1. Open **Chatbot Test** workflow
 2. Find the MCP Client tool connected to your server
@@ -115,14 +115,14 @@ For each specialized tool:
 4. Open the chat and test with real questions
 5. Check the **Logs** panel to verify each tool is called correctly
 
-### Step 7 — Publish
+### Step 7: Publish
 
 1. Click **"Publish"** (top right)
 2. Add the MCP URL to the team documentation in Slack
 
 ---
 
-## Example — Livestock Pricing MCP
+## Example: Livestock Pricing MCP
 
 **URL:** `msfourrager.app.n8n.cloud/mcp/prix-betail`  
 **Data source:** reseauencansquebec.com  
