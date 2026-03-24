@@ -1,4 +1,4 @@
-# MCP Server — Standard Procedure
+# Standard Procedure for MCP Server
 
 ## What is an MCP Server?
 
